@@ -1,0 +1,13 @@
+{
+    "name": "vova/php-project-lvl1",
+    "description": "hexlet-project-1",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hallernsk",
+            "email": "haller@ngs.ru"
+        }
+    ],
+    "require": {}
+}
