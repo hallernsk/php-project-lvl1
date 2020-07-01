@@ -12,5 +12,12 @@
             "email": "haller@ngs.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    },
+    "autoload": {
+        "files": [
+            "src/Cli.php"
+        ]
+    }
 }
