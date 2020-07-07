@@ -2,7 +2,8 @@
     "name": "vova/php-project-lvl1",
     "description": "hexlet-project-1",
     "bin": [
-      "bin/brain-games"
+      "bin/brain-games",
+      "bin/brain-even"
     ],
     "type": "project",
     "license": "MIT",
@@ -17,7 +18,8 @@
     },
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/even.php"
         ]
     },
     "require-dev": {
