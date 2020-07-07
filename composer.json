@@ -1,5 +1,5 @@
 {
-    "name": "vova/php-project-lvl1",
+    "name": "hallernsk/php-project-lvl1",
     "description": "hexlet-project-1",
     "bin": [
       "bin/brain-games",
