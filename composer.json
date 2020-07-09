@@ -3,7 +3,8 @@
     "description": "hexlet-project-1",
     "bin": [
       "bin/brain-games",
-      "bin/brain-even"
+      "bin/brain-even",
+      "bin/brain-calc"
     ],
     "type": "project",
     "license": "MIT",
@@ -19,7 +20,9 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/even.php"
+            "src/even.php",
+            "src/games/calc.php",
+            "src/games/game.php" 
         ]
     },
     "require-dev": {
