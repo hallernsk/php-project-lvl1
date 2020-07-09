@@ -4,9 +4,9 @@
 
 Installation and the game “brain-even”:
 
-[![asciicast](https://asciinema.org/a/sAcSnWKiQPDlVuGzfjMd0uSxT.svg)](https://asciinema.org/a/sAcSnWKiQPDlVuGzfjMd0uSxT)
+[![asciicast](https://asciinema.org/a/yg8fFmtVvxisb9cpsxdpzaLD9.svg)](https://asciinema.org/a/yg8fFmtVvxisb9cpsxdpzaLD9)
 
 
 The game "brain-calc":
 
-[![asciicast](https://asciinema.org/a/jtPtBjvvBzmtUonubxFMLds2K.svg)](https://asciinema.org/a/jtPtBjvvBzmtUonubxFMLds2K)
+[![asciicast](https://asciinema.org/a/tzGKpFD11tlIksqaKMW8FTRHC.svg)](https://asciinema.org/a/tzGKpFD11tlIksqaKMW8FTRHC)
