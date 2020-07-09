@@ -3,7 +3,8 @@
 
 
 Installation and the game “brain-even”:
-[![asciicast](https://asciinema.org/a/ZSrw5D1dOTWea2IzqV7k8qxEi.svg)](https://asciinema.org/a/ZSrw5D1dOTWea2IzqV7k8qxEi)
+
+[![asciicast](https://asciinema.org/a/sAcSnWKiQPDlVuGzfjMd0uSxT.svg)](https://asciinema.org/a/sAcSnWKiQPDlVuGzfjMd0uSxT)
 
 
 The game "brain-calc":
