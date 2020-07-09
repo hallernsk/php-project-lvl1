@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\games\calc;
+namespace BrainGames\games;
 
 use function Cli\line;
 use function Cli\prompt;
@@ -11,7 +11,7 @@ function runcalc()
     $maxNumOfRounds = 3;
     $expr = [];
     $correctAnswer = [];
-    for ($i = 1; $i <= $maxNumOfRounds; $i++) {
+    for ($i = 0; $i < $maxNumOfRounds; $i++) {
         $num1 = mt_rand(1, 10);
         $num2 = mt_rand(1, 10);
         $numSign = mt_rand(0, 2);

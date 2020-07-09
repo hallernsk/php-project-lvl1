@@ -2,7 +2,6 @@
     "name": "hallernsk/php-project-lvl1",
     "description": "hexlet-project-1",
     "bin": [
-      "bin/brain-games",
       "bin/brain-even",
       "bin/brain-calc"
     ],
@@ -19,8 +18,7 @@
     },
     "autoload": {
         "files": [
-            "src/Cli.php",
-            "src/even.php",
+            "src/games/even.php",
             "src/games/calc.php",
             "src/games/game.php" 
         ]

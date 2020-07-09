@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\games\calc;
+namespace BrainGames\games;
 
 use function Cli\line;
 use function Cli\prompt;
@@ -16,7 +16,7 @@ function rungame($task, $expr, $correctAnswer)
     line("\n");
 
     $maxNumOfRounds = 3;
-    for ($i = 1; $i <= $maxNumOfRounds; $i++) {
+    for ($i = 0; $i < $maxNumOfRounds; $i++) {
         line("Question: {$expr[$i]}");
         $answer = prompt("Your answer");
         if ($correctAnswer[$i] != $answer) {
