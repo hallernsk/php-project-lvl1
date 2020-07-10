@@ -10,4 +10,5 @@ return array(
     'c2aa66d2a99e8274efd354712dd81d1a' => $baseDir . '/src/games/even.php',
     '2c8a74ac6205133a604d54cfc5b995ab' => $baseDir . '/src/games/calc.php',
     '113b192948c53b98c34a395d769b0d60' => $baseDir . '/src/games/game.php',
+    '5e650f45b0835d8d89286a50c1e5e8ec' => $baseDir . '/src/games/gcd.php',
 );
