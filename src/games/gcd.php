@@ -5,6 +5,18 @@ namespace BrainGames\games;
 use function Cli\line;
 use function Cli\prompt;
 
+function get_gcd($a, $b)
+{
+    while ($a != $b) {
+        if ($a > $b) {
+            $a =  $a - $b;
+        } else {
+            $b = $b - $a;
+        }
+    }
+    return $b;
+}
+
 function rungcd()
 {
     $task = "Find the greatest common divisor of given numbers.";
@@ -15,16 +27,7 @@ function rungcd()
         $num1 = mt_rand(1, 100);
         $num2 = mt_rand(1, 100);
         $expr[$i] = "{$num1} {$num2}";
-//        if ($num1 > $num2) {
-//            [$num1, $num2] = [$num2, $num1];
-//        }
-        $min = min($num1, $num2);
-        for ($j = $min; $j >= 1; $j--) {
-            if ($num1 % $j === 0 && $num2 % $j === 0) {
-                $correctAnswer[$i] = $j;
-                break;
-            }
-        }
+        $correctAnswer[$i] = get_gcd($num1, $num2);
     }
     rungame($task, $expr, $correctAnswer);
 }
