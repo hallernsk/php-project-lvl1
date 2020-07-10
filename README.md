@@ -10,3 +10,7 @@ Installation and the game “brain-even”:
 The game "brain-calc":
 
 [![asciicast](https://asciinema.org/a/tzGKpFD11tlIksqaKMW8FTRHC.svg)](https://asciinema.org/a/tzGKpFD11tlIksqaKMW8FTRHC)
+
+The game "brain-gcd":
+
+[![asciicast](https://asciinema.org/a/QjUCc3l32Q7pyg6LFy3JbWIVt.svg)](https://asciinema.org/a/QjUCc3l32Q7pyg6LFy3JbWIVt)
