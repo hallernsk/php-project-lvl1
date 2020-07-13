@@ -12,4 +12,5 @@ return array(
     '113b192948c53b98c34a395d769b0d60' => $baseDir . '/src/games/game.php',
     '5e650f45b0835d8d89286a50c1e5e8ec' => $baseDir . '/src/games/gcd.php',
     '160f4a6775995ef47c99246b0caa6630' => $baseDir . '/src/games/progression.php',
+    '0d3d6ab6d3b8b3f21b4d2ce6574cf2cd' => $baseDir . '/src/games/prime.php',
 );

@@ -5,7 +5,7 @@ namespace BrainGames\games;
 use function Cli\line;
 use function Cli\prompt;
 
-function rungame($task, $expr, $correctAnswer)
+function rungame($task, $question, $correctAnswer)
 {
     line("Welcome to the Brain Games!");
     line("$task");
@@ -17,7 +17,7 @@ function rungame($task, $expr, $correctAnswer)
 
     $maxNumOfRounds = 3;
     for ($i = 0; $i < $maxNumOfRounds; $i++) {
-        line("Question: {$expr[$i]}");
+        line("Question: {$question[$i]}");
         $answer = prompt("Your answer");
         if ($correctAnswer[$i] != $answer) {
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer[$i]}'.");
