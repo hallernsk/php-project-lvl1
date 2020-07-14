@@ -9,11 +9,11 @@ function runeven()
 {
     $task = 'Answer "yes" if the number is even, otherwise answer "no".';
     $maxNumOfRounds = 3;
-    $num = [];
+    $questionNum = [];
     $correctAnswer = [];
     for ($i = 0; $i < $maxNumOfRounds; $i++) {
-        $num[$i] = mt_rand(1, 100);
-        $correctAnswer[$i] = ($num[$i] % 2 == 0) ? "yes" : "no";
+        $questionNum[$i] = mt_rand(1, 100);
+        $correctAnswer[$i] = ($questionNum[$i] % 2 == 0) ? "yes" : "no";
     }
-    rungame($task, $num, $correctAnswer);
+    rungame($task, $questionNum, $correctAnswer);
 }

@@ -9,7 +9,7 @@ function runcalc()
 {
     $task = "What is the result od the expression?";
     $maxNumOfRounds = 3;
-    $expr = [];
+    $questionExpression = [];
     $correctAnswer = [];
     for ($i = 0; $i < $maxNumOfRounds; $i++) {
         $num1 = mt_rand(1, 10);
@@ -17,7 +17,7 @@ function runcalc()
         $numSign = mt_rand(0, 2);
         $arrSign = ["+", "-", "*"];
         $sign = $arrSign[$numSign];
-        $expr[$i] = "{$num1} {$sign} {$num2}";
+        $questionExpression[$i] = "{$num1} {$sign} {$num2}";
         switch ($numSign) {
             case 0:
                 $correctAnswer[$i] = $num1 + $num2;
@@ -29,5 +29,5 @@ function runcalc()
                 $correctAnswer[$i] = $num1 * $num2;
         }
     }
-    rungame($task, $expr, $correctAnswer);
+    rungame($task, $questionExpression, $correctAnswer);
 }

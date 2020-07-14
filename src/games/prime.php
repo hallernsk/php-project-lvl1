@@ -22,12 +22,12 @@ function runprime()
 {
     $task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $maxNumOfRounds = 3;
-    $expr = [];
+    $questionNum = [];
     $correctAnswer = [];
     for ($i = 0; $i < $maxNumOfRounds; $i++) {
         $num = mt_rand(1, 100);
-        $expr[$i] = "{$num}";
+        $questionNum[$i] = "{$num}";
         $correctAnswer[$i] = (isPrime($num)) ? "yes" : "no";
     }
-    rungame($task, $expr, $correctAnswer);
+    rungame($task, $questionNum, $correctAnswer);
 }
