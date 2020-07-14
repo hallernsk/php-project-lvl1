@@ -1,3 +1,5 @@
+# php-project-lvl1
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/7a199a4cc529047c775e/maintainability)](https://codeclimate.com/github/hallernsk/php-project-lvl1/maintainability)
 [![Github Actions Status](https://github.com/hallernsk/php-project-lvl1/workflows/PHP%20CI/badge.svg)](https://github.com/hallernsk/php-project-lvl1/actions)
 
