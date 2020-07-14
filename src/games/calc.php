@@ -1,17 +1,17 @@
 <?php
 
-namespace BrainGames\games;
+namespace BrainGames\games\calc;
 
-use function Cli\line;
-use function Cli\prompt;
+use function BrainGames\games\runGame;
 
-function runcalc()
+use const BrainGames\games\NUM_OF_ROUNDS;
+
+function run()
 {
     $task = "What is the result od the expression?";
-    $maxNumOfRounds = 3;
     $questionExpression = [];
     $correctAnswer = [];
-    for ($i = 0; $i < $maxNumOfRounds; $i++) {
+    for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
         $num1 = mt_rand(1, 10);
         $num2 = mt_rand(1, 10);
         $numSign = mt_rand(0, 2);
@@ -29,5 +29,5 @@ function runcalc()
                 $correctAnswer[$i] = $num1 * $num2;
         }
     }
-    rungame($task, $questionExpression, $correctAnswer);
+    runGame($task, $questionExpression, $correctAnswer);
 }

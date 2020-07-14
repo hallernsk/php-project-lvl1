@@ -23,7 +23,7 @@
         "files": [
             "src/games/even.php",
             "src/games/calc.php",
-            "src/games/game.php",
+            "src/game.php",
             "src/games/gcd.php", 
             "src/games/progression.php",
             "src/games/prime.php"             

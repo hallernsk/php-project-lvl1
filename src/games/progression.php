@@ -1,19 +1,19 @@
 <?php
 
-namespace BrainGames\games;
+namespace BrainGames\games\progression;
 
-use function Cli\line;
-use function Cli\prompt;
+use function BrainGames\games\runGame;
 
-function runprogression()
+use const BrainGames\games\NUM_OF_ROUNDS;
+
+function run()
 {
     $task = "What number is missing in the progression?";
-    $maxNumOfRounds = 3;
     $correctAnswer = [];
     $arrProgression = [];
     $questionRow = [];
     $lengthOfRow = 10;
-    for ($i = 0; $i < $maxNumOfRounds; $i++) {
+    for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
         $startNum = mt_rand(1, 10);
         $step = mt_rand(2, 9);
         $missNum = mt_rand(1, 8);
@@ -25,5 +25,5 @@ function runprogression()
         $arrProgression [$missNum] = '..';
         $questionRow[$i] = implode(' ', $arrProgression);
     }
-    rungame($task, $questionRow, $correctAnswer);
+    runGame($task, $questionRow, $correctAnswer);
 }

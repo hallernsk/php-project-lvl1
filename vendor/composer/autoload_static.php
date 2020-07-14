@@ -10,7 +10,7 @@ class ComposerStaticInit82d0edf51285ef9904aeaaf607356804
         'be01b9b16925dcb22165c40b46681ac6' => __DIR__ . '/..' . '/wp-cli/php-cli-tools/lib/cli/cli.php',
         'c2aa66d2a99e8274efd354712dd81d1a' => __DIR__ . '/../..' . '/src/games/even.php',
         '2c8a74ac6205133a604d54cfc5b995ab' => __DIR__ . '/../..' . '/src/games/calc.php',
-        '113b192948c53b98c34a395d769b0d60' => __DIR__ . '/../..' . '/src/games/game.php',
+        '7bf82f697d064161a9e1d825785060c6' => __DIR__ . '/../..' . '/src/game.php',
         '5e650f45b0835d8d89286a50c1e5e8ec' => __DIR__ . '/../..' . '/src/games/gcd.php',
         '160f4a6775995ef47c99246b0caa6630' => __DIR__ . '/../..' . '/src/games/progression.php',
         '0d3d6ab6d3b8b3f21b4d2ce6574cf2cd' => __DIR__ . '/../..' . '/src/games/prime.php',

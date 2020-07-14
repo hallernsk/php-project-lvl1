@@ -1,9 +1,10 @@
 <?php
 
-namespace BrainGames\games;
+namespace BrainGames\games\prime;
 
-use function Cli\line;
-use function Cli\prompt;
+use function BrainGames\games\runGame;
+
+use const BrainGames\games\NUM_OF_ROUNDS;
 
 function isPrime($num)
 {
@@ -18,16 +19,15 @@ function isPrime($num)
     return true;
 }
 
-function runprime()
+function run()
 {
     $task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-    $maxNumOfRounds = 3;
     $questionNum = [];
     $correctAnswer = [];
-    for ($i = 0; $i < $maxNumOfRounds; $i++) {
+    for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
         $num = mt_rand(1, 100);
         $questionNum[$i] = "{$num}";
         $correctAnswer[$i] = (isPrime($num)) ? "yes" : "no";
     }
-    rungame($task, $questionNum, $correctAnswer);
+    runGame($task, $questionNum, $correctAnswer);
 }

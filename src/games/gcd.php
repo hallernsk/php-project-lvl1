@@ -1,9 +1,10 @@
 <?php
 
-namespace BrainGames\games;
+namespace BrainGames\games\gcd;
 
-use function Cli\line;
-use function Cli\prompt;
+use function BrainGames\games\runGame;
+
+use const BrainGames\games\NUM_OF_ROUNDS;
 
 function getGcd($a, $b)
 {
@@ -17,17 +18,16 @@ function getGcd($a, $b)
     return $b;
 }
 
-function rungcd()
+function run()
 {
     $task = "Find the greatest common divisor of given numbers.";
-    $maxNumOfRounds = 3;
     $questionNums = [];
     $correctAnswer = [];
-    for ($i = 0; $i < $maxNumOfRounds; $i++) {
+    for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
         $num1 = mt_rand(1, 100);
         $num2 = mt_rand(1, 100);
         $questionNums[$i] = "{$num1} {$num2}";
         $correctAnswer[$i] = getGcd($num1, $num2);
     }
-    rungame($task, $questionNums, $correctAnswer);
+    runGame($task, $questionNums, $correctAnswer);
 }
