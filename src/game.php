@@ -10,12 +10,10 @@ const NUM_OF_ROUNDS = 3;
 function runGame($task, $question, $correctAnswer)
 {
     line("Welcome to the Brain Games!");
-    line("$task");
-    line("\n");
+    line("{$task}\n");
 
     $name = prompt("May I have your name?");
-    line("Hello, %s!", $name);
-    line("\n");
+    line("Hello, {$name}!\n");
 
     for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
         line("Question: {$question[$i]}");
@@ -24,10 +22,8 @@ function runGame($task, $question, $correctAnswer)
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer[$i]}'.");
             line("Let`s try again, {$name}!");
             return;
-        } else {
-            line("Correct!");
         }
+        line("Correct!");
     }
     line("Congratulations, {$name}!");
-    return;
 }

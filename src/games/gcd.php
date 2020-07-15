@@ -6,16 +6,16 @@ use function BrainGames\games\runGame;
 
 use const BrainGames\games\NUM_OF_ROUNDS;
 
-function getGcd($a, $b)
+function getGCD($a, $b)
 {
-    while ($a != $b) {
+    while ($a !== 0 && $b !== 0) {
         if ($a > $b) {
-            $a =  $a - $b;
+            $a =  $a % $b;
         } else {
-            $b = $b - $a;
+            $b = $b % $a;
         }
     }
-    return $b;
+    return $a + $b;
 }
 
 function run()
@@ -27,7 +27,7 @@ function run()
         $num1 = mt_rand(1, 100);
         $num2 = mt_rand(1, 100);
         $questionNums[$i] = "{$num1} {$num2}";
-        $correctAnswer[$i] = getGcd($num1, $num2);
+        $correctAnswer[$i] = getGCD($num1, $num2);
     }
     runGame($task, $questionNums, $correctAnswer);
 }
