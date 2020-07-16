@@ -23,16 +23,16 @@ function calc($num1, $num2, $sign)
 function run()
 {
     $task = "What is the result of the expression?";
-    $questionExpression = [];
-    $correctAnswer = [];
+    $questionAnswer = [];
     for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
         $num1 = mt_rand(1, 10);
         $num2 = mt_rand(1, 10);
-        $arrSign = ["+", "-", "*"];
-        $numSign = array_rand($arrSign);
-        $sign = $arrSign[$numSign];
-        $questionExpression[$i] = "{$num1} {$sign} {$num2}";
-        $correctAnswer[$i] = calc($num1, $num2, $sign);
+        $operators = ["+", "-", "*"];
+        $operatorIndex = array_rand($operators);
+        $sign = $operators[$operatorIndex];
+        $questionExpression = "{$num1} {$sign} {$num2}";
+        $correctAnswer = (string) calc($num1, $num2, $sign);
+        $questionAnswer[$i] = [$questionExpression, $correctAnswer];
     }
-    runGame($task, $questionExpression, $correctAnswer);
+    runGame($task, $questionAnswer);
 }

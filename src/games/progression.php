@@ -9,9 +9,8 @@ use const BrainGames\games\NUM_OF_ROUNDS;
 function run()
 {
     $task = "What number is missing in the progression?";
-    $correctAnswer = [];
     $progression = [];
-    $questionRow = [];
+    $questionAnswer = [];
     $progressionLength = 10;
     for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
         $startNum = mt_rand(1, 10);
@@ -21,9 +20,10 @@ function run()
         for ($j = 1; $j < $progressionLength; $j++) {
             $progression[$j] = $progression[$j - 1] + $step;
         }
-        $correctAnswer[$i] = $progression[$missIndex];
+        $correctAnswer = (string) $progression[$missIndex];
         $progression [$missIndex] = '..';
-        $questionRow[$i] = implode(' ', $progression);
+        $questionRow = implode(' ', $progression);
+        $questionAnswer[$i] = [$questionRow, $correctAnswer];
     }
-    runGame($task, $questionRow, $correctAnswer);
+    runGame($task, $questionAnswer);
 }
