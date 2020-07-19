@@ -21,13 +21,13 @@ function getGCD($a, $b)
 function run()
 {
     $task = "Find the greatest common divisor of given numbers.";
-    $questionAnswer = [];
+    $questionsAnswers = [];
     for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
         $num1 = mt_rand(1, 100);
         $num2 = mt_rand(1, 100);
         $questionNums = "{$num1} {$num2}";
         $correctAnswer = (string) getGCD($num1, $num2);
-        $questionAnswer[$i] = [$questionNums, $correctAnswer];
+        $questionsAnswers[$i] = [$questionNums, $correctAnswer];
     }
-    runGame($task, $questionAnswer);
+    runGame($task, $questionsAnswers);
 }

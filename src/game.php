@@ -7,7 +7,7 @@ use function Cli\prompt;
 
 const NUM_OF_ROUNDS = 3;
 
-function runGame($task, $questionAnswer)
+function runGame($task, $questionsAnswers)
 {
     line("Welcome to the Brain Games!");
     line($task);
@@ -16,11 +16,11 @@ function runGame($task, $questionAnswer)
     line("Hello, {$name}");
     line();
 
-    for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
-        line("Question: {$questionAnswer[$i][0]}");
-        $answer = prompt("Your answer");
-        if ($questionAnswer[$i][1] !== $answer) {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$questionAnswer[$i][1]}'.");
+    foreach ($questionsAnswers as [$question, $answer]) {
+        line("Question: {$question}");
+        $userAnswer = prompt("Your answer");
+        if ($userAnswer !== $answer) {
+            line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$answer}'.");
             line("Let`s try again, {$name}!");
             return;
         }

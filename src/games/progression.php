@@ -10,7 +10,7 @@ function run()
 {
     $task = "What number is missing in the progression?";
     $progression = [];
-    $questionAnswer = [];
+    $questionsAnswers = [];
     $progressionLength = 10;
     for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
         $startNum = mt_rand(1, 10);
@@ -23,7 +23,7 @@ function run()
         $correctAnswer = (string) $progression[$missIndex];
         $progression [$missIndex] = '..';
         $questionRow = implode(' ', $progression);
-        $questionAnswer[$i] = [$questionRow, $correctAnswer];
+        $questionsAnswers[$i] = [$questionRow, $correctAnswer];
     }
-    runGame($task, $questionAnswer);
+    runGame($task, $questionsAnswers);
 }
