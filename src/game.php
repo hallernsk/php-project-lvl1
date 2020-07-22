@@ -16,11 +16,11 @@ function runGame($task, $questionsAnswers)
     line("Hello, {$name}");
     line();
 
-    foreach ($questionsAnswers as [$question, $answer]) {
+    foreach ($questionsAnswers as [$question, $correctAnswer]) {
         line("Question: {$question}");
         $userAnswer = prompt("Your answer");
-        if ($userAnswer !== $answer) {
-            line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$answer}'.");
+        if ($userAnswer !== $correctAnswer) {
+            line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
             line("Let`s try again, {$name}!");
             return;
         }
