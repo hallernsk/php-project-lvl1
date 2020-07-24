@@ -25,9 +25,9 @@ function run()
     for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
         $num1 = mt_rand(1, 100);
         $num2 = mt_rand(1, 100);
-        $questionNums = "{$num1} {$num2}";
+        $question = "{$num1} {$num2}";
         $correctAnswer = (string) getGCD($num1, $num2);
-        $questionsAnswers[$i] = [$questionNums, $correctAnswer];
+        $questionsAnswers[$i] = [$question, $correctAnswer];
     }
     runGame($task, $questionsAnswers);
 }

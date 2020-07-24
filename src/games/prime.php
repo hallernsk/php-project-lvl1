@@ -25,9 +25,9 @@ function run()
     $questionsAnswers = [];
     for ($i = 0; $i < NUM_OF_ROUNDS; $i++) {
         $num = mt_rand(1, 100);
-        $questionNum = "{$num}";
+        $question = (string) $num;
         $correctAnswer = isPrime($num) ? "yes" : "no";
-        $questionsAnswers[$i] = [$questionNum, $correctAnswer];
+        $questionsAnswers[$i] = [$question, $correctAnswer];
     }
     runGame($task, $questionsAnswers);
 }
